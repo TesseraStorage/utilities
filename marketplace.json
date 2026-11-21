@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "updated": "2026-11-21",
+  "model": "index-only",
+  "disclaimers": [
+    "Open-source only: every listed utility is permissively licensed.",
+    "Not Tessera-signed: listing is not an endorsement, audit, warranty, or signature by Tessera.",
+    "The human is responsible for what they install, include, and confirm.",
+    "As-is, use at your own risk; no warranties of any kind.",
+    "Tessera destinations, when offered, use ordinary per_action client objects only: no privileged paths, no special metadata, no billing exceptions.",
+    "Local-first: utilities must remain fully functional without Tessera."
+  ],
+  "entries": [
+    {
+      "id": 1,
+      "name": "agent-env-backup",
+      "description": "Human-controlled encrypted backup/restore CLI for agent environments. AES-256-GCM with a 12-word seed as the sole passphrase; nothing written unencrypted. Checklist-driven restore with confirmation gates and an action allow-list. Local-first.",
+      "repository": "https://github.com/TesseraStorage/agent-env-backup",
+      "license": "MIT",
+      "pin": {
+        "tag": "v0.1.0-rc1",
+        "commit": "e298c161a580dc30d6edbacb6e274bafc9311f43"
+      },
+      "install": "pip install \"git+https://github.com/TesseraStorage/agent-env-backup@v0.1.0-rc1\"",
+      "tessera_signed": false,
+      "network_calls": false,
+      "notes": "Optional Tessera destination is a documented stub in this release (ordinary per_action client object design; not wired)."
+    }
+  ]
+}
